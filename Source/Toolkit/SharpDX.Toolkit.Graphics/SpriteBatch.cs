@@ -826,8 +826,7 @@ namespace SharpDX.Toolkit.Graphics
                 // We are calling directly the PixelShaderStage. We assume that the texture is on slot 0 as it is
                 // setup in the original BasicEffect.fx shader.
                 // NOTE SmartK8 : Calls internal method
-                MethodInfo setShaderResources = GraphicsDevice.PixelShaderStage.GetType().GetMethod("SetShaderResources", BindingFlags.NonPublic | BindingFlags.Instance);
-                setShaderResources.Invoke(GraphicsDevice.PixelShaderStage, new Object[] { 0, 1, new IntPtr(&nativeShaderResourceViewPointer) });
+                GraphicsDevice.PixelShaderStage.SetShaderResourcesIntPtr(0, 1, new IntPtr(&nativeShaderResourceViewPointer));
 
                 DrawBatchPerTextureAndPass(ref texture, sprites, offset, count);
 

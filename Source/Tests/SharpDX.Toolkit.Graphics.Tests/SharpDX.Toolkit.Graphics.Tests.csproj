@@ -44,22 +44,22 @@
       <HintPath>..\..\..\External\NUnit\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="SharpDX">
-      <HintPath>..\..\..\Bin\DirectX11_2-net40\SharpDX.dll</HintPath>
+      <HintPath>..\..\..\..\SharpDX\Bin\Desktop\SharpDX.dll</HintPath>
     </Reference>
     <Reference Include="SharpDX.D3DCompiler">
-      <HintPath>..\..\..\Bin\DirectX11_2-net40\SharpDX.D3DCompiler.dll</HintPath>
+      <HintPath>..\..\..\..\SharpDX\Bin\Desktop\SharpDX.D3DCompiler.dll</HintPath>
     </Reference>
     <Reference Include="SharpDX.Direct2D1">
-      <HintPath>..\..\..\Bin\DirectX11_2-net40\SharpDX.Direct2D1.dll</HintPath>
+      <HintPath>..\..\..\..\SharpDX\Bin\Desktop\SharpDX.Direct2D1.dll</HintPath>
     </Reference>
     <Reference Include="SharpDX.Direct3D11">
-      <HintPath>..\..\..\Bin\DirectX11_2-net40\SharpDX.Direct3D11.dll</HintPath>
+      <HintPath>..\..\..\..\SharpDX\Bin\Desktop\SharpDX.Direct3D11.dll</HintPath>
     </Reference>
     <Reference Include="SharpDX.DXGI">
-      <HintPath>..\..\..\Bin\DirectX11_2-net40\SharpDX.DXGI.dll</HintPath>
+      <HintPath>..\..\..\..\SharpDX\Bin\Desktop\SharpDX.DXGI.dll</HintPath>
     </Reference>
     <Reference Include="SharpDX.Mathematics">
-      <HintPath>..\..\..\Bin\DirectX11_2-net40\SharpDX.Mathematics.dll</HintPath>
+      <HintPath>..\..\..\..\SharpDX\Bin\Desktop\SharpDX.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

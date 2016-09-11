@@ -1091,9 +1091,7 @@ namespace SharpDX.Toolkit.Graphics
             for (int i = 0; i < viewports.Length; i++)
                 this.viewports[i] = viewports[i];
 
-            // NOTE SmartK8 : Calls internal method
-            MethodInfo setShaderResources = RasterizerStage.GetType().GetMethod("SetViewports", BindingFlags.NonPublic | BindingFlags.Instance);
-            setShaderResources.Invoke(RasterizerStage, new Object[] { viewports.Length, Marshal.UnsafeAddrOfPinnedArrayElement(viewports, 0) });
+            RasterizerStage.SetShaderResourcesIntPtr(viewports.Length, Marshal.UnsafeAddrOfPinnedArrayElement(viewports, 0));
         }
 
         /// <summary>
