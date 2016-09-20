@@ -832,7 +832,7 @@ namespace SharpDX.Toolkit.Graphics
 
                 // unbind the texture from pass as it can be used later as a render target
                 // NOTE SmartK8 : Calls internal method
-                setShaderResources.Invoke(GraphicsDevice.PixelShaderStage, new Object[] { 0, 1, GraphicsDevice.ResetSlotsPointers });
+                GraphicsDevice.PixelShaderStage.SetShaderResourcesIntPtr(0, 1, GraphicsDevice.ResetSlotsPointers);
             }
         }
 

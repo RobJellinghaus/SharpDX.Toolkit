@@ -72,17 +72,17 @@
     <None Include="SharpDX.Toolkit.Audio.nuspec" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="SharpDX, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Bin\DirectX11_2-net40\SharpDX.dll</HintPath>
+    <Reference Include="SharpDX">
+      <HintPath>..\..\..\..\SharpDX\Bin\Desktop\SharpDX.dll</HintPath>
     </Reference>
-    <Reference Include="SharpDX.Mathematics, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Bin\DirectX11_2-net40\SharpDX.Mathematics.dll</HintPath>
+    <Reference Include="SharpDX.DXGI">
+      <HintPath>..\..\..\..\SharpDX\Bin\Desktop\SharpDX.DXGI.dll</HintPath>
     </Reference>
-    <Reference Include="SharpDX.XAudio2, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Bin\DirectX11_2-net40\SharpDX.XAudio2.dll</HintPath>
+    <Reference Include="SharpDX.Mathematics">
+      <HintPath>..\..\..\..\SharpDX\Bin\Desktop\SharpDX.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.XAudio2">
+      <HintPath>..\..\..\..\SharpDX\Bin\Desktop\SharpDX.XAudio2.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(SolutionDir)\Build\SharpDX.PostSettings.targets" />

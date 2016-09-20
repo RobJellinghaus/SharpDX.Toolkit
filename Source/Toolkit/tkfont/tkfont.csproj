@@ -24,13 +24,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="SharpDX, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Bin\DirectX11_2-net40\SharpDX.dll</HintPath>
+    <Reference Include="SharpDX">
+      <HintPath>..\..\..\..\SharpDX\Bin\Desktop\SharpDX.dll</HintPath>
     </Reference>
-    <Reference Include="SharpDX.DXGI, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Bin\DirectX11_2-net40\SharpDX.DXGI.dll</HintPath>
+    <Reference Include="SharpDX.DXGI">
+      <HintPath>..\..\..\..\SharpDX\Bin\Desktop\SharpDX.DXGI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />

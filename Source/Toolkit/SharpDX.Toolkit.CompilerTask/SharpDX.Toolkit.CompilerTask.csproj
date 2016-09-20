@@ -39,9 +39,8 @@
     <Reference Include="Microsoft.Build.Utilities.v4.0">
       <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.Build.Utilities.v4.0.dll</HintPath>
     </Reference>
-    <Reference Include="SharpDX, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Bin\DirectX11_2-net40\SharpDX.dll</HintPath>
+    <Reference Include="SharpDX">
+      <HintPath>..\..\..\..\SharpDX\Bin\Desktop\SharpDX.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

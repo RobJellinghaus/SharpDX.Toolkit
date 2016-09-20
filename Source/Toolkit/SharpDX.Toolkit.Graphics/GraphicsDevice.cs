@@ -1091,7 +1091,7 @@ namespace SharpDX.Toolkit.Graphics
             for (int i = 0; i < viewports.Length; i++)
                 this.viewports[i] = viewports[i];
 
-            RasterizerStage.SetShaderResourcesIntPtr(viewports.Length, Marshal.UnsafeAddrOfPinnedArrayElement(viewports, 0));
+            RasterizerStage.SetViewportsIntPtr(viewports.Length, Marshal.UnsafeAddrOfPinnedArrayElement(viewports, 0));
         }
 
         /// <summary>

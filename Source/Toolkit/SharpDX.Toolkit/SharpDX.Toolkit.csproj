@@ -156,6 +156,7 @@
     <Reference Include="SharpDX.Mathematics">
       <HintPath>..\..\..\..\SharpDX\Bin\Desktop\SharpDX.Mathematics.dll</HintPath>
     </Reference>
+    <Reference Include="System" />
   </ItemGroup>
   <Import Project="$(SolutionDir)\Build\SharpDX.PostSettings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

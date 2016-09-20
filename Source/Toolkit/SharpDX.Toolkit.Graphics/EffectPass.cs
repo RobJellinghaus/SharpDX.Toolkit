@@ -303,7 +303,7 @@ namespace SharpDX.Toolkit.Graphics
                 {
                     for (int i = 0; i < localLink.Count; i++)
                     {
-                        shaderStage.SetUnorderedAccessViewsIntPtr(pLinks->SlotIndex, pLinks->SlotCount, graphicsDevice.ResetSlotsPointers);
+                        shaderStage.SetUnorderedAccessViewsIntPtr(pLinks->SlotIndex, pLinks->SlotCount, graphicsDevice.ResetSlotsPointers, pLinks->UavInitialCount);
                         pLinks++;
                     }
                 }
@@ -312,7 +312,8 @@ namespace SharpDX.Toolkit.Graphics
                     // Otherwise, for OutputMergerStage.
                     for (int i = 0; i < localLink.Count; i++)
                     {
-                        mergerStage.SetUnorderedAccessViewsIntPtr(pLinks->SlotIndex, pLinks->SlotCount, graphicsDevice.ResetSlotsPointers, pLinks->UavInitialCount);
+                        // TODO RJELLING: Fix this next line somehow
+                        //mergerStage.SetUnorderedAccessViewsIntPtr(pLinks->SlotIndex, pLinks->SlotCount, graphicsDevice.ResetSlotsPointers, pLinks->UavInitialCount);
                         pLinks++;
                     }
                 }
@@ -476,7 +477,8 @@ namespace SharpDX.Toolkit.Graphics
                 {
                     for (int i = 0; i < localLink.Count; i++)
                     {
-                        mergerStage.SetUnorderedAccessViewsIntPtr(pLinks->SlotIndex, pLinks->SlotCount, pLinks->Pointer, pLinks->UavInitialCount);
+                        // TODO RJELLING: Fix this next line somehow
+                        //mergerStage.SetUnorderedAccessViewsIntPtr(pLinks->SlotIndex, pLinks->SlotCount, pLinks->Pointer, pLinks->UavInitialCount);
                         pLinks++;
                     }
                 }
@@ -485,7 +487,8 @@ namespace SharpDX.Toolkit.Graphics
                     // Otherwise, for OutputMergerStage.
                     for (int i = 0; i < localLink.Count; i++)
                     {
-                        mergerStage.SetUnorderedAccessViewsIntPtr(pLinks->SlotIndex, pLinks->SlotCount, pLinks->Pointer, pLinks->UavInitialCount);
+                        // TODO RJELLING: Fix this next line somehow
+                        //mergerStage.SetUnorderedAccessViewsIntPtr(pLinks->SlotIndex, pLinks->SlotCount, pLinks->Pointer, pLinks->UavInitialCount);
                         pLinks++;
                     }
                 }
@@ -497,7 +500,7 @@ namespace SharpDX.Toolkit.Graphics
                 pLinks = localLink.Links;
                 for (int i = 0; i < localLink.Count; i++)
                 {
-                    shaderStage.SetSamplers(pLinks->SlotIndex, pLinks->SlotCount, pLinks->Pointer);
+                    shaderStage.SetSamplersIntPtr(pLinks->SlotIndex, pLinks->SlotCount, pLinks->Pointer);
                     pLinks++;
                 }
             }
