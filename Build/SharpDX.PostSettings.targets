@@ -40,6 +40,8 @@
   </Target>
 
   <Target Name="AfterBuild">
+    <Copy SourceFiles="@(MainAssembly)" DestinationFolder="$(IntermediateOutputPath)\Originals" SkipUnchangedFiles="false" OverwriteReadOnlyFiles="true"/>
+    
     <Exec Command='"$(SolutionDir)\Source\Bin\SharpCLI.exe" "$(TargetPath)"'/>
 
     <GetFrameworkSdkPath>

@@ -29,6 +29,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Net40'">
     <Prefer32Bit>false</Prefer32Bit>
+    <DebugType>full</DebugType>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="AssemblyDoc.cs" />

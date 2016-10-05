@@ -24,6 +24,7 @@ using System.IO;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
+using SharpDX;
 using SharpDX.IO;
 using SharpDX.Mathematics;
 using SharpDX.Multimedia;
